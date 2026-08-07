@@ -1,0 +1,1630 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chicken Road su Winnita: guida, demo e strategie</title>
+  <meta name="description"
+    content="Scopri Chicken Road su Winnita: regole, livelli, RTP 98%, demo gratis, mobile, cashout e consigli per gestire rischio e bankroll.">
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+  <link rel="canonical" href="https://winita-casinos.it.com/chicken-road/">
+  <link rel="alternate" hreflang="it-it" href="https://winita-casinos.it.com/chicken-road/">
+  <link rel="alternate" hreflang="x-default" href="https://winita-casinos.it.com/">
+  <style>
+    :root {
+      --blue: #2536c4;
+      --blue-d: #1b1f7a;
+      --green: #54c168;
+      --red: #ef5b5b;
+      --ink: #1a1d2e;
+      --mut: #7a7f96;
+      --line: #e7e9f2;
+      --bg: #f4f5f9
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box
+    }
+
+    body {
+      font: 15px/1.5 -apple-system, Segoe UI, Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--ink)
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit
+    }
+
+    .wrap {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 16px
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      border: 0;
+      border-radius: 999px;
+      padding: 11px 22px;
+      font-weight: 700;
+      font-size: 14px;
+      cursor: pointer;
+      transition: .15s;
+      white-space: nowrap
+    }
+
+    .btn.sm {
+      padding: 8px 16px;
+      font-size: 13px
+    }
+
+    .btn.primary {
+      background: var(--blue);
+      color: #fff
+    }
+
+    .btn.primary:hover {
+      background: #1d2ba8
+    }
+
+    .btn.green {
+      background: var(--green);
+      color: #fff
+    }
+
+    .btn.green:hover {
+      filter: brightness(1.05)
+    }
+
+    .btn.red {
+      background: var(--red);
+      color: #fff
+    }
+
+    .btn.red:hover {
+      filter: brightness(1.05)
+    }
+
+    .btn.ghost {
+      background: transparent;
+      border: 1.5px solid var(--line);
+      color: var(--mut)
+    }
+
+    .btn.ghost:hover {
+      border-color: var(--blue);
+      color: var(--blue)
+    }
+
+    /* header */
+    .header {
+      background: #fff;
+      border-bottom: 1px solid var(--line)
+    }
+
+    .headerIn {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      height: 72px
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      font-weight: 800;
+      font-size: 24px;
+      color: var(--blue);
+      letter-spacing: .5px
+    }
+
+    .logo .mark {
+      position: relative;
+      width: 30px;
+      height: 30px;
+      flex-shrink: 0
+    }
+
+    .logo .mark i {
+      position: absolute;
+      width: 13px;
+      height: 13px;
+      border-radius: 3.5px
+    }
+
+    .logo .mark i:nth-child(1) {
+      top: 0;
+      left: 8px;
+      background: var(--green)
+    }
+
+    .logo .mark i:nth-child(2) {
+      bottom: 0;
+      left: 0;
+      background: var(--blue)
+    }
+
+    .logo .mark i:nth-child(3) {
+      bottom: 0;
+      right: 0;
+      background: var(--red)
+    }
+
+    .headerActions {
+      margin-left: auto;
+      display: flex;
+      align-items: center;
+      gap: 12px
+    }
+
+    .oppure {
+      color: var(--mut);
+      font-size: 13px
+    }
+
+    .socials {
+      display: flex;
+      gap: 10px;
+      align-items: center
+    }
+
+    .socials a {
+      width: 26px;
+      height: 26px;
+      display: grid;
+      place-items: center;
+      color: var(--mut)
+    }
+
+    /* subheader / banner */
+    .subheader {
+      background: linear-gradient(135deg, #2c39c9, #1a1e72);
+      color: #fff;
+      position: relative;
+      overflow: hidden
+    }
+
+    .subheader::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image: radial-gradient(rgba(255, 255, 255, .06) 1.5px, transparent 1.5px);
+      background-size: 22px 22px;
+      opacity: .5
+    }
+
+    .nav {
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 8px 26px;
+      padding: 16px 0;
+      justify-content: center
+    }
+
+    .navItem {
+      color: #cdd3ff;
+      font-weight: 700;
+      font-size: 15px;
+      letter-spacing: .3px
+    }
+
+    .navItem:hover {
+      color: #fff
+    }
+
+    .navItem.active {
+      color: var(--green)
+    }
+
+    .flag {
+      width: 26px;
+      height: 18px;
+      border-radius: 3px;
+      background: linear-gradient(90deg, #008c45 33%, #fff 33% 66%, #cd212a 66%);
+      display: inline-block
+    }
+
+    .banner {
+      position: relative;
+      border-radius: 16px;
+      overflow: hidden;
+      min-height: 340px;
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      background: linear-gradient(120deg, #2730b5, #1a1e72)
+    }
+
+    .bannerImg {
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      width: 66%;
+      z-index: 0
+    }
+
+    .bannerImg img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      display: block
+    }
+
+    .banner::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      pointer-events: none;
+      background: linear-gradient(90deg, #1a1e72 0%, #1a1e72 30%, rgba(26, 30, 114, .55) 44%, transparent 56%)
+    }
+
+    .bannerImg.bph {
+      background: linear-gradient(120deg, #2c39c9, #3a47d6 55%, #7c3aed)
+    }
+
+    .bannerImg.bph::after {
+      content: "3000 € + 450 GIRI";
+      position: absolute;
+      right: 8%;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #ffd84d;
+      font-weight: 800;
+      font-size: 40px;
+      letter-spacing: 1px
+    }
+
+    .bannerText {
+      position: relative;
+      z-index: 2;
+      padding: 0 0 0 44px;
+      max-width: 44%
+    }
+
+    .bannerText h1 {
+      font-size: 32px;
+      line-height: 1.18;
+      font-weight: 800;
+      margin-bottom: 22px;
+      text-shadow: 0 2px 12px rgba(0, 0, 0, .3)
+    }
+
+    .bannerText h1 b {
+      color: #ffd84d
+    }
+
+    .dots {
+      position: absolute;
+      bottom: 18px;
+      left: 0;
+      right: 0;
+      z-index: 1;
+      display: flex;
+      gap: 7px;
+      justify-content: center
+    }
+
+    .dots i {
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, .35)
+    }
+
+    .dots i.on {
+      background: #fff
+    }
+
+    /* intro H1 + лид */
+    .intro {
+      padding: 22px 0 6px
+    }
+
+    .intro h1 {
+      font-size: 26px;
+      font-weight: 800;
+      margin-bottom: 8px
+    }
+
+    .intro p {
+      color: #3a3f57;
+      max-width: 900px
+    }
+
+    /* games toolbar */
+    .gamesBar {
+      background: #fff;
+      border-bottom: 1px solid var(--line);
+      position: sticky;
+      top: 0;
+      z-index: 20
+    }
+
+    .gamesBarIn {
+      display: flex;
+      align-items: center;
+      gap: 8px 28px;
+      flex-wrap: wrap;
+      padding: 16px 0
+    }
+
+    .tab {
+      font-weight: 700;
+      color: var(--mut);
+      font-size: 15px
+    }
+
+    .tab:hover {
+      color: var(--ink)
+    }
+
+    .tab.active {
+      color: var(--blue)
+    }
+
+    .fav {
+      color: #cbd0e3;
+      font-size: 20px
+    }
+
+    .search {
+      margin-left: auto;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--bg);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 9px 16px;
+      min-width: 260px;
+      color: var(--mut)
+    }
+
+    .search input {
+      border: 0;
+      background: none;
+      outline: none;
+      font: inherit;
+      width: 100%
+    }
+
+    /* layout: контент + сайдбар */
+    .layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 300px;
+      gap: 22px;
+      align-items: start
+    }
+
+    .content {
+      min-width: 0
+    }
+
+    /* grid */
+    .games {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 14px;
+      padding: 24px 0
+    }
+
+    .tmb {
+      position: relative;
+      transition: .15s
+    }
+
+    .tmb:hover {
+      transform: translateY(-3px)
+    }
+
+    .tmbImg {
+      aspect-ratio: 400/254;
+      background: #eef0f7;
+      overflow: hidden;
+      position: relative;
+      border-radius: 12px;
+      box-shadow: 0 1px 4px rgba(20, 25, 60, .1)
+    }
+
+    .tmbImg img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block
+    }
+
+    .tmbImg.ph {
+      display: grid;
+      place-items: center;
+      background: linear-gradient(135deg, #3a47d6, #7c3aed)
+    }
+
+    .tmbImg.ph::after {
+      content: attr(data-t);
+      color: #fff;
+      font-weight: 700;
+      font-size: 12px;
+      text-align: center;
+      padding: 8px;
+      opacity: .92
+    }
+
+    /* кнопки поверх постера на hover */
+    .tmbOver {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background: rgba(16, 20, 46, .72);
+      opacity: 0;
+      transition: .15s
+    }
+
+    .tmb:hover .tmbOver {
+      opacity: 1
+    }
+
+    .tmbOver .btn {
+      min-width: 96px;
+      padding: 8px 0
+    }
+
+    .tmbOver .btn.primary {
+      background: var(--green)
+    }
+
+    .tmbOver .btn.primary:hover {
+      filter: brightness(1.06)
+    }
+
+    .tmbOver .btn.demo {
+      background: transparent;
+      border: 1.5px solid rgba(255, 255, 255, .7);
+      color: #fff
+    }
+
+    .tmbOver .btn.demo:hover {
+      background: rgba(255, 255, 255, .15)
+    }
+
+    .tmbTitle {
+      font-size: 12.5px;
+      font-weight: 600;
+      padding: 8px 4px 2px;
+      line-height: 1.25;
+      text-align: center;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+      overflow: hidden
+    }
+
+    .new {
+      position: absolute;
+      top: 8px;
+      left: 8px;
+      z-index: 2;
+      background: #ffb020;
+      color: #3a2600;
+      font-size: 10px;
+      font-weight: 800;
+      padding: 2px 8px;
+      border-radius: 6px;
+      text-transform: uppercase
+    }
+
+    /* welcome bonus — копия widgetPlaceFirst (фон-плитки + петух справа) */
+    .welcomeBonus {
+      grid-column: 1/-1;
+      position: relative;
+      overflow: hidden;
+      border-radius: 16px;
+      min-height: 160px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 16px;
+      padding: 0 200px 0 40px;
+      color: #fff;
+      background: linear-gradient(105deg, #3640d8 0%, #8a3bd6 42%, #ef5b5b 74%, #ff9b3c 100%)
+    }
+
+    .wbBg {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+      opacity: .85
+    }
+
+    .wbBg svg {
+      width: 100%;
+      height: 100%
+    }
+
+    .wbTitle {
+      position: relative;
+      z-index: 1;
+      font-size: 30px;
+      font-weight: 800;
+      line-height: 1.18;
+      max-width: 560px;
+      text-shadow: 0 2px 8px rgba(0, 0, 0, .25)
+    }
+
+    .wbTitle span:last-child {
+      color: #ffe14d
+    }
+
+    .wbBtn {
+      position: relative;
+      z-index: 1;
+      align-self: flex-start;
+      background: #fff;
+      color: var(--blue)
+    }
+
+    .wbBtn:hover {
+      background: #eef0ff
+    }
+
+    .wbChar {
+      position: absolute;
+      right: 30px;
+      bottom: 0;
+      z-index: 1;
+      width: 210px;
+      height: 100%;
+      object-fit: contain;
+      object-position: bottom right;
+      filter: drop-shadow(0 6px 16px rgba(0, 0, 0, .28))
+    }
+
+    /* sidebar 1:1 */
+    .sidebar {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      padding: 24px 0
+    }
+
+    .sidebar>* {
+      flex-shrink: 0
+    }
+
+    /* strip widget */
+    .sbStrip {
+      position: relative;
+      overflow: hidden;
+      border-radius: 14px;
+      min-height: 150px;
+      padding: 14px 16px;
+      background: linear-gradient(135deg, #5a2da8, #9b2fb0 60%, #e0457f);
+      color: #fff
+    }
+
+    .sbStripHead {
+      font-weight: 800;
+      font-size: 15px;
+      margin-bottom: 10px;
+      position: relative;
+      z-index: 1
+    }
+
+    .sbStripPromo {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 5px;
+      max-width: 62%
+    }
+
+    .sbStripTitle {
+      font-size: 17px;
+      font-weight: 800
+    }
+
+    .sbStripInfo {
+      font-size: 11.5px;
+      opacity: .92;
+      line-height: 1.3;
+      margin-bottom: 6px
+    }
+
+    .sbStripPromo .btn {
+      background: #fff;
+      color: #9b2fb0
+    }
+
+    .sbStripGirl {
+      position: absolute;
+      right: -6px;
+      bottom: 0;
+      width: 120px;
+      height: 140px;
+      object-fit: contain;
+      object-position: bottom;
+      z-index: 0
+    }
+
+    /* bonus 50% */
+    .sbBonus {
+      background: linear-gradient(135deg, #2f3bd4, #7c3aed);
+      color: #fff;
+      border-radius: 14px;
+      padding: 18px;
+      text-align: center
+    }
+
+    .sbBonusTop {
+      font-size: 20px;
+      font-weight: 800
+    }
+
+    .sbBonusTop b {
+      color: #ffe14d
+    }
+
+    .sbBonusDep {
+      font-size: 13px;
+      opacity: .9;
+      margin: 6px 0 12px
+    }
+
+    .sbBonusDep span {
+      font-weight: 800
+    }
+
+    .sbCount small {
+      display: block;
+      font-size: 11px;
+      opacity: .85;
+      margin-bottom: 4px
+    }
+
+    .sbTimer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 4px;
+      font-weight: 800;
+      font-size: 22px;
+      margin-bottom: 14px
+    }
+
+    .sbTimer i {
+      background: rgba(255, 255, 255, .18);
+      border-radius: 7px;
+      padding: 5px 9px;
+      font-style: normal
+    }
+
+    .sbBonus .btn {
+      width: 100%;
+      background: #fff;
+      color: var(--blue)
+    }
+
+    .sbMore {
+      display: block;
+      margin-top: 10px;
+      font-size: 12px;
+      color: #fff;
+      opacity: .9;
+      text-decoration: underline
+    }
+
+    /* tornei */
+    .sbTour,
+    .sbWins {
+      background: #fff;
+      border-radius: 14px;
+      box-shadow: 0 1px 3px rgba(20, 25, 60, .08);
+      padding: 16px
+    }
+
+    .sbHead {
+      font-weight: 800;
+      font-size: 15px;
+      margin-bottom: 12px
+    }
+
+    .sbTourItem {
+      display: none
+    }
+
+    .sbTourItem.on {
+      display: block
+    }
+
+    .sbTourHead {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 12px;
+      color: inherit
+    }
+
+    .sbTourHead img {
+      width: 64px;
+      height: 64px;
+      border-radius: 10px;
+      object-fit: cover;
+      flex-shrink: 0;
+      background: #eef0f7
+    }
+
+    .sbTourHead>div {
+      display: flex;
+      flex-direction: column;
+      gap: 1px;
+      min-width: 0
+    }
+
+    .sbTourCap {
+      font-size: 11px;
+      color: var(--mut);
+      font-weight: 700;
+      text-transform: uppercase
+    }
+
+    .sbTourName {
+      font-weight: 800;
+      font-size: 14px
+    }
+
+    .sbTourFond {
+      font-size: 12px;
+      color: var(--mut)
+    }
+
+    .sbTourFond b {
+      color: var(--green);
+      font-size: 13px
+    }
+
+    .sbTourEnds {
+      font-size: 11px;
+      color: var(--mut)
+    }
+
+    .sbTourTbl {
+      list-style: none;
+      margin: 0 0 12px;
+      font-size: 12px
+    }
+
+    .sbTourTbl li {
+      display: grid;
+      grid-template-columns: 18px 1fr auto;
+      gap: 8px;
+      padding: 4px 0;
+      border-top: 1px solid var(--line)
+    }
+
+    .sbTourTbl li.h {
+      color: var(--mut);
+      font-size: 10px;
+      text-transform: uppercase;
+      font-weight: 700;
+      border-top: 0
+    }
+
+    .sbTourTbl li span:first-child {
+      color: var(--mut);
+      font-weight: 700
+    }
+
+    .sbTourTbl b {
+      font-variant-numeric: tabular-nums
+    }
+
+    .sbTour .btn,
+    .sbWins .btn {
+      width: 100%
+    }
+
+    .sbTabs {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      margin-top: 12px
+    }
+
+    .sbTabs span {
+      width: 26px;
+      height: 26px;
+      display: grid;
+      place-items: center;
+      border-radius: 7px;
+      background: var(--bg);
+      color: var(--mut);
+      font-weight: 700;
+      font-size: 13px;
+      cursor: pointer
+    }
+
+    .sbTabs span.on {
+      background: var(--blue);
+      color: #fff
+    }
+
+    /* migliori vincite */
+    .sbWinsList {
+      list-style: none;
+      margin: 0 0 12px
+    }
+
+    .sbWinsList li {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 8px 0;
+      border-top: 1px solid var(--line)
+    }
+
+    .sbWinN {
+      color: var(--mut);
+      font-weight: 700;
+      font-size: 12px;
+      width: 14px
+    }
+
+    .sbWinsList img {
+      width: 46px;
+      height: 30px;
+      border-radius: 6px;
+      object-fit: cover;
+      background: #eef0f7;
+      flex-shrink: 0
+    }
+
+    .sbWinInfo {
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+      flex: 1
+    }
+
+    .sbWinInfo span {
+      color: var(--mut);
+      font-size: 12px
+    }
+
+    .sbWinInfo b {
+      font-size: 13px;
+      color: var(--green)
+    }
+
+    /* news */
+    .sbNews {
+      position: relative;
+      display: block;
+      overflow: hidden;
+      background: linear-gradient(135deg, #1b1f7a, #2f3bd4);
+      color: #fff;
+      border-radius: 14px;
+      padding: 16px 18px;
+      min-height: 96px
+    }
+
+    .sbNewsTag {
+      position: relative;
+      z-index: 1;
+      font-size: 11px;
+      opacity: .85;
+      text-transform: uppercase;
+      font-weight: 700
+    }
+
+    .sbNewsTitle {
+      position: relative;
+      z-index: 1;
+      display: block;
+      font-size: 16px;
+      font-weight: 800;
+      margin-top: 4px;
+      max-width: 65%
+    }
+
+    .sbNewsImg {
+      position: absolute;
+      right: 0;
+      top: 0;
+      height: 100%;
+      width: auto;
+      object-fit: cover;
+      opacity: .9
+    }
+
+    /* SEO */
+    .seo {
+      background: #fff;
+      border-top: 1px solid var(--line);
+      padding: 36px 0;
+      margin-top: 20px
+    }
+
+    .seo h2 {
+      font-size: 21px;
+      margin: 22px 0 10px
+    }
+
+    .seo h2:first-child {
+      margin-top: 0
+    }
+
+    .seo p {
+      color: #3a3f57;
+      margin-bottom: 12px;
+      max-width: 880px
+    }
+
+    .seo .disc {
+      font-size: 13px;
+      color: var(--mut);
+      background: var(--bg);
+      border-radius: 10px;
+      padding: 14px 16px;
+      margin-top: 18px
+    }
+
+    /* footer (синий корп) */
+    .footer {
+      background: var(--blue);
+      color: #d3d8ff;
+      padding: 30px 0 26px;
+      font-size: 13px;
+      margin-top: 30px
+    }
+
+    .footer .wrap {
+      display: flex;
+      flex-direction: column;
+      gap: 22px
+    }
+
+    .payRow {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      padding-bottom: 20px;
+      border-bottom: 1px solid rgba(255, 255, 255, .16)
+    }
+
+    .payRow img {
+      height: 30px;
+      width: auto;
+      max-width: 64px;
+      object-fit: contain;
+      flex-shrink: 0
+    }
+
+    .payRow .crypto {
+      color: #aeb6ff;
+      font-weight: 700;
+      font-size: 12px;
+      letter-spacing: .5px;
+      margin-left: auto
+    }
+
+    @media(max-width:680px) {
+      .payRow .crypto {
+        margin-left: 0;
+        width: 100%;
+        margin-top: 6px
+      }
+    }
+
+    .fnav {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px
+    }
+
+    .fnav h4 {
+      color: #fff;
+      font-size: 14px;
+      margin-bottom: 10px
+    }
+
+    .fnav a {
+      display: block;
+      color: #bcc3ff;
+      padding: 3px 0;
+      font-size: 13px
+    }
+
+    .fnav a:hover {
+      color: #fff
+    }
+
+    .providers {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      padding: 18px 0;
+      border-top: 1px solid rgba(255, 255, 255, .16);
+      border-bottom: 1px solid rgba(255, 255, 255, .16)
+    }
+
+    .prov {
+      background: rgba(255, 255, 255, .1);
+      color: #cdd2ff;
+      font-size: 11.5px;
+      padding: 5px 11px;
+      border-radius: 6px
+    }
+
+    .fbottom {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      color: #b6bcf5;
+      font-size: 12px;
+      line-height: 1.5
+    }
+
+    .age {
+      flex-shrink: 0;
+      display: inline-grid;
+      place-items: center;
+      width: 34px;
+      height: 34px;
+      border: 2px solid #ff9d9d;
+      color: #ff9d9d;
+      border-radius: 50%;
+      font-weight: 800;
+      font-size: 13px
+    }
+
+    .copy {
+      color: #9aa3e0;
+      font-size: 12px
+    }
+
+    @media(max-width:680px) {
+      .fnav {
+        grid-template-columns: 1fr 1fr
+      }
+
+      .payRow .crypto {
+        margin-left: 0;
+        width: 100%
+      }
+    }
+
+    @media(max-width:1100px) {
+      .layout {
+        grid-template-columns: 1fr
+      }
+
+      .sidebar {
+        position: static;
+        flex-direction: row;
+        flex-wrap: wrap
+      }
+
+      .sidebar>* {
+        flex: 1;
+        min-width: 240px
+      }
+    }
+
+    @media(max-width:680px) {
+      .games {
+        grid-template-columns: repeat(2, 1fr)
+      }
+
+      .welcomeBonus {
+        flex-direction: column;
+        text-align: center;
+        padding: 18px;
+        min-height: auto
+      }
+
+      .wbChar {
+        width: 110px;
+        height: 110px
+      }
+
+      .headerIn {
+        height: 60px
+      }
+
+      .logo {
+        font-size: 20px
+      }
+
+      .headerActions .btn {
+        padding: 9px 14px;
+        font-size: 13px
+      }
+
+      .oppure,
+      .socials {
+        display: none
+      }
+
+      .bannerText {
+        max-width: 80%
+      }
+
+      .bannerText h1 {
+        font-size: 22px
+      }
+
+      .search {
+        min-width: 0;
+        flex: 1
+      }
+
+      .fnav {
+        grid-template-columns: 1fr 1fr
+      }
+    }
+  </style>
+  <style>
+    .subTop {
+      background: linear-gradient(120deg, #2730b5, #1a1e72);
+      padding-bottom: 18px
+    }
+
+    .crumbs {
+      font-size: 12px;
+      color: #bcc3ff;
+      padding: 14px 0 0
+    }
+
+    .crumbs a {
+      color: #cdd2ff
+    }
+
+    .crumbs b {
+      color: #fff
+    }
+
+    .subHero {
+      position: relative;
+      z-index: 1;
+      padding: 14px 0 4px
+    }
+
+    .subHero h1 {
+      color: #fff;
+      font-size: 30px;
+      font-weight: 800;
+      line-height: 1.2;
+      max-width: 820px
+    }
+
+    .clusterNav {
+      background: #fff;
+      border-bottom: 1px solid var(--line);
+      position: sticky;
+      top: 0;
+      z-index: 20
+    }
+
+    .clusterNavIn {
+      display: flex;
+      gap: 6px 22px;
+      flex-wrap: wrap;
+      padding: 13px 0;
+      font-size: 14px
+    }
+
+    .clusterNav a {
+      color: var(--mut);
+      font-weight: 700
+    }
+
+    .clusterNav a:hover {
+      color: var(--ink)
+    }
+
+    .clusterNav a.on {
+      color: var(--blue)
+    }
+
+    .article {
+      max-width: 860px;
+      padding: 26px 0 10px
+    }
+
+    .article h2 {
+      font-size: 22px;
+      margin: 26px 0 10px
+    }
+
+    .article h3 {
+      font-size: 17px;
+      margin: 18px 0 8px
+    }
+
+    .article p {
+      color: #33384e;
+      margin-bottom: 13px
+    }
+
+    .article ul {
+      margin: 0 0 14px 20px
+    }
+
+    .article li {
+      margin-bottom: 6px;
+      color: #33384e
+    }
+
+    .article a {
+      color: var(--blue);
+      font-weight: 600
+    }
+
+    .article .tbl {
+      overflow-x: auto;
+      margin: 0 0 16px
+    }
+
+    .article table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px
+    }
+
+    .article th,
+    .article td {
+      border: 1px solid var(--line);
+      padding: 9px 12px;
+      text-align: left
+    }
+
+    .article th {
+      background: var(--bg);
+      font-weight: 700
+    }
+
+    .article .faq {
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 12px 16px;
+      margin-bottom: 10px
+    }
+
+    .article .faq summary {
+      font-weight: 700;
+      cursor: pointer
+    }
+
+    .article .faq p {
+      margin: 8px 0 0
+    }
+
+    .ctaBox {
+      background: linear-gradient(120deg, #2f3bd4, #7c3aed);
+      color: #fff;
+      border-radius: 14px;
+      padding: 20px 24px;
+      margin: 22px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap
+    }
+
+    .ctaBox b {
+      color: #ffe14d
+    }
+
+    .ctaBox .btn {
+      background: #fff;
+      color: var(--blue)
+    }
+
+    .clusterFoot {
+      display: flex;
+      gap: 8px 18px;
+      flex-wrap: wrap;
+      padding: 18px 0;
+      border-top: 1px solid var(--line);
+      font-size: 13px
+    }
+
+    .clusterFoot a {
+      color: var(--blue);
+      font-weight: 600
+    }
+  </style>
+  <script
+    type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://winita-casinos.it.com/"}, {"@type": "ListItem", "position": 2, "name": "Chicken Road su Winnita: guida completa al crash game con la gallina", "item": "https://winita-casinos.it.com/chicken-road/"}]}</script>
+  <script
+    type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Quanto posso puntare al minimo su Chicken Road?", "acceptedAnswer": {"@type": "Answer", "text": "La puntata minima parte da 0,10 € nella versione base e da 0,01 € in Chicken Road 2.0. Sul conto, il deposito minimo è di 10 €."}}, {"@type": "Question", "name": "Come si incassa la vincita durante il round?", "acceptedAnswer": {"@type": "Answer", "text": "Premi il pulsante di cashout (o la barra spaziatrice) quando vuoi, purché prima dell'incidente. In alternativa imposti l'auto-cashout a una soglia fissata."}}, {"@type": "Question", "name": "Il gioco è davvero equo?", "acceptedAnswer": {"@type": "Answer", "text": "Ogni round gira sul Provably Fair: a fine partita ti arriva un hash con cui verifichi che il risultato non sia stato truccato."}}, {"@type": "Question", "name": "Posso provarlo gratis?", "acceptedAnswer": {"@type": "Answer", "text": "Sì. La demo usa un saldo virtuale ed è ottima per fare pratica prima di passare ai soldi veri."}}, {"@type": "Question", "name": "Come prelevo le vincite?", "acceptedAnswer": {"@type": "Answer", "text": "Dalla sezione \"Preleva\" scegli il metodo (e-wallet, carta o bonifico), inserisci l'importo e confermi la richiesta. Prima del primo prelievo devi completare la verifica dell'identità (KYC). I tempi dipendono dal metodo: gli e-wallet di solito sono i più rapidi (poche ore, al massimo entro le 24), mentre carta e bonifico possono prendersi qualche giorno lavorativo. Controlla sempre limiti minimi e massimi di prelievo e le condizioni aggiornate nella sezione Cassa, perché cambiano in base al metodo e allo status del conto."}}]}</script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="wrap headerIn">
+      <a class="logo" href="/"><span class="mark"><i></i><i></i><i></i></span>WINNITA</a>
+      <div class="headerActions">
+        <a class="btn green" href="/referral-link">Registrazione veloce</a>
+        <a class="btn red" href="/referral-link">Accedi</a>
+        <span class="oppure">oppure</span>
+        <span class="socials"><a href="/referral-link" aria-label="Google">G</a><a href="/referral-link"
+            aria-label="TikTok">♪</a><a href="/referral-link" aria-label="X">✕</a></span>
+      </div>
+    </div>
+  </header>
+  <section class="subTop">
+    <div class="wrap">
+      <nav class="nav"><a class="navItem active" href="/referral-link">Casinò</a><a class="navItem"
+          href="/referral-link">Sport</a><a class="navItem" href="/referral-link">VIP Club</a><a class="navItem"
+          href="/referral-link">Tornei</a><a class="navItem" href="/referral-link">Lotteria</a><a class="navItem"
+          href="/referral-link">Negozio</a><a class="navItem" href="/referral-link">Sala della Gloria</a><a
+          class="navItem" href="/referral-link">Scrigni del Tesoro</a><a class="navItem"
+          href="/referral-link">Promozioni</a><span class="flag" title="Italia"></span></nav>
+      <div class="crumbs"><a href="/">Home</a> / <b>Chicken Road</b></div>
+      <div class="subHero">
+        <h1>Chicken Road su Winnita: guida completa al crash game con la gallina</h1>
+      </div>
+    </div>
+  </section>
+  <div class="clusterNav">
+    <div class="wrap clusterNavIn"><a href="/">Home</a><a href="/bonus/">Bonus</a><a href="/slot/">Slot</a><a
+        href="/recensioni/">Recensioni</a><a href="/accesso/">Accesso</a><a href="/app/">App</a><a
+        href="/prelievi/">Prelievi</a><a href="/plinko/">Plinko</a><a href="/aviator/">Aviator</a><a
+        href="/chicken-road/" class="on">Chicken Road</a></div>
+  </div>
+  <main class="wrap">
+    <article class="article">
+      <p>Chicken Road è uno di quei giochi che ti agganciano in trenta secondi. Una gallina attraversa una strada
+        trafficata, il moltiplicatore sale a ogni passo e tu resti lì, col dito sul pulsante, a chiederti se incassare
+        adesso o tirare ancora un po&#x27;. Su Winnita lo trovi sia in versione reale che in demo, direttamente da
+        browser, senza scaricare niente. Qui sotto ti spiego tutto: regole, livelli, payout, strategie e i punti dove
+        conviene tenere gli occhi aperti.</p>
+      <h2>Cos&#x27;è Chicken Road e perché è così popolare</h2>
+      <p>Chicken Road è un crash game, uno di quegli instant game dal ritmo arcade che negli ultimi anni hanno preso
+        piede tra i giocatori italiani. Il concetto sta in due righe: la gallina avanza casella dopo casella lungo la
+        strada, e a ogni passo riuscito il moltiplicatore della tua puntata cresce. Finché non arriva la macchina. Se ti
+        lasci prendere dalla foga e la gallina viene investita, la mano si chiude e la puntata va a zero.</p>
+      <p>Qui sta il bello, e anche il rischio: decidi tu quando fermarti. Il titolo originale è uscito il 4 aprile 2024
+        e porta la firma di InOut Games, con un RTP dichiarato del 98% — uno dei più alti in circolazione per questa
+        categoria. In catalogo trovi anche Chicken Road 2.0, la versione aggiornata, che aggiunge qualche meccanica.</p>
+      <p>E la popolarità? Non è un caso. Round brevissimi (15–45 secondi), grafica pulita e zero tempo per impararlo. Ci
+        metti dentro anche le statistiche multiplayer in tempo reale, che ti fanno vedere chi sta giocando e con quali
+        moltiplicatori sta uscendo, e il quadro è completo.</p>
+      <div class="ctaBox">
+        <div>Bonus di benvenuto fino a <b>3000 € + 450 giri gratis</b> su Winnita.</div><a class="btn"
+          href="/referral-link">Richiedi ora</a>
+      </div>
+      <h2>Come funziona: regole e meccaniche</h2>
+      <p>Tutto ruota intorno al <b>cashout</b>. Piazzi la puntata, fai partire la gallina e a ogni casella attraversata
+        il moltiplicatore sale. Quando vuoi incassi a mano — un click o la barra spaziatrice — e ti porti a casa quanto
+        accumulato fino a quel momento. Aspetti troppo? Arriva l&#x27;ostacolo e perdi tutto.</p>
+      <p>C&#x27;è poi l&#x27;<b>auto-cashout</b>: imposti una soglia (mettiamo 1.10x) e il sistema incassa da solo
+        appena la raggiunge. Comodo quando i nervi rischiano di tradirti.</p>
+      <p>Ogni round è verificabile col sistema <b>Provably Fair</b>: a fine partita ti arriva un hash con cui controlli
+        che il risultato non sia stato toccato. E qui sta il senso del gioco: non esiste lo &quot;schema vincente&quot;.
+        C&#x27;è solo la tua testa che decide quando staccare.</p>
+      <h2>Guida passo passo per iniziare su Winnita</h2>
+      <p>Bastano pochi minuti. Ecco come si fa:</p>
+      <p>1. <b>Registrazione.</b> Premi &quot;Iscrizione&quot; in alto, metti la tua e-mail e scegli una password. Puoi
+        anche collegare un profilo social — in quel caso il conto resta legato a quel profilo.</p>
+      <p>2. <b>Verifica.</b> Devi essere maggiorenne (18+) e caricare un documento valido per confermare
+        l&#x27;identità. La fai una volta sola, è prevista dal regolamento.</p>
+      <p>3. <b>Deposito.</b> Apri &quot;Deposita&quot;, scegli come pagare — carta, e-wallet o bonifico — e inserisci
+        l&#x27;importo. Il minimo è di <b>10 €</b>. I versamenti arrivano subito.</p>
+      <p>4. <b>Trova il gioco.</b> Cerca &quot;Chicken Road&quot; nella ricerca interna e ti escono i titoli
+        disponibili, versione 2.0 compresa.</p>
+      <p>5. <b>Gioca.</b> Imposti la puntata, scegli la difficoltà e fai partire la gallina.</p>
+      <p>Occhio al <b>bonus di benvenuto</b>: fino a <b>3000 € + 450 giri</b> sul casinò, con alternative come il
+        pacchetto HighRoller fino a 5000 € + 100 giri o il bonus a tre livelli. Prima di richiederlo, leggiti sempre le
+        condizioni nella sezione Promozioni — il rollover fa la differenza.</p>
+      <h2>Livelli di difficoltà e tabella dei pagamenti</h2>
+      <p>Prima di ogni round scegli la difficoltà, che cambia sia la frequenza degli ostacoli sia l&#x27;ampiezza dei
+        moltiplicatori. In Chicken Road 2.0 le opzioni sono queste:</p>
+      <div class="tbl">
+        <table>
+          <thead>
+            <tr>
+              <th>Livello</th>
+              <th>Linee</th>
+              <th>Profilo</th>
+              <th>Moltiplicatore tipico per sezione</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Facile</td>
+              <td>30</td>
+              <td>Pochi incidenti, payout contenuti</td>
+              <td>1.01x – 1.03x</td>
+            </tr>
+            <tr>
+              <td>Medio</td>
+              <td>25</td>
+              <td>Equilibrato</td>
+              <td>1.06x – 1.10x</td>
+            </tr>
+            <tr>
+              <td>Difficile</td>
+              <td>22</td>
+              <td>Più rischio, payout più alti</td>
+              <td>1.10x – 1.15x</td>
+            </tr>
+            <tr>
+              <td>Hardcore</td>
+              <td>18</td>
+              <td>Massimo rischio</td>
+              <td>fino a 1.19x</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>I moltiplicatori sono fissi per corsia e salgono in modo progressivo, fino a un tetto di <b>1.19x</b> per
+        sezione nella 2.0. La volatilità si attesta su livelli medi, abbastanza controllati.</p>
+      <p>Sul tecnico: il gioco base prende puntate da <b>0,10 €</b> fino a <b>100 €</b>, la 2.0 va da 0,01 € a 190 €. La
+        vincita massima teorica può toccare cifre altissime, ma — come dice la parola — resta teorica. Tienilo a mente
+        quando ragioni sul bankroll. I valori sono quelli dichiarati dal provider e possono cambiare con gli
+        aggiornamenti del titolo.</p>
+      <h2>Strategie e consigli per giocare a Chicken Road</h2>
+      <p>Una formula sicura non c&#x27;è — l&#x27;esito è casuale, punto — ma giocare con la testa fa la differenza tra
+        una sessione divertente e una serata da dimenticare. Qualche dritta che regge alla prova dei fatti:</p>
+      <ul>
+        <li><b>Decidi dove incassi prima di partire.</b> Regola d&#x27;oro: fissi il moltiplicatore di cashout in
+          anticipo e lo rispetti. Senza eccezioni.</li>
+        <li><b>Adatta l&#x27;obiettivo al livello.</b> In Facile conviene chiudere presto, sull&#x27;1.01x–1.03x. In
+          Medio o Difficile miri all&#x27;1.06x–1.10x. In Hardcore, per quanto suoni strano, meglio uscire basso
+          sull&#x27;1.03x–1.06x: lì gli incidenti sono pane quotidiano.</li>
+        <li><b>Calibra il bankroll.</b> Più o meno: 50–100 unità in Facile, 100–200 in Medio o Difficile, 200–300 in
+          Hardcore. Per &quot;unità&quot; intendo la tua puntata base.</li>
+        <li><b>Usa l&#x27;auto-cashout</b> quando senti che la testa ti sta giocando contro.</li>
+      </ul>
+      <p>Errori da fuggire come la peste: pensare che meno linee vogliano dire vincite più veloci (è l&#x27;opposto,
+        meno linee = più crash), ignorare il tetto dell&#x27;1.19x per sezione, gonfiare le puntate senza un bankroll
+        che le copra e — il grande classico — rincorrere le perdite. Giocare senza un punto di cashout deciso prima è il
+        modo più rapido per svuotare il conto.</p>
+      <h2>Modalità demo: giocare gratis</h2>
+      <p>La demo è perfetta per prendere le misure senza rischiare un euro. La attivi col tasto &quot;Demo&quot; accanto
+        al titolo: parti con un saldo virtuale e provi tutto — cashout manuale, auto-cashout, i vari livelli —
+        esattamente come nella versione reale.</p>
+      <p>È la palestra ideale per testare la tua strategia, vedere come si muovono i moltiplicatori sui diversi livelli
+        e farti l&#x27;occhio sulla velocità dei round prima di mettere soldi veri. L&#x27;unica differenza, ovvio, è
+        che le vincite virtuali non si prelevano. Trattala come un allenamento, non come un assaggio di vincite future.
+      </p>
+      <h2>Chicken Road da mobile: l&#x27;esperienza su smartphone</h2>
+      <p>Il gioco gira da browser su qualsiasi dispositivo, senza installare niente. Apri il sito dal telefono, accedi e
+        il titolo si adatta allo schermo: i comandi touch rispondono al volo, un tap fa avanzare la gallina e un altro
+        incassa.</p>
+      <p>Se ci giochi spesso, l&#x27;operatore mette a disposizione anche un&#x27;app da scaricare. Una nota pratica,
+        però: certe funzioni VIP — tipo la Ruota della fortuna riservata allo status Super VIP — restano solo sulla
+        versione completa per PC. Per il resto, da mobile l&#x27;esperienza è praticamente identica a quella desktop.
+      </p>
+      <h2>Pro e contro del gioco</h2>
+      <p><b>Pro</b></p>
+      <ul>
+        <li>RTP elevato (98%), tra i migliori della categoria crash.</li>
+        <li>Regole semplici, round velocissimi e controllo totale sul rischio.</li>
+        <li>Sistema Provably Fair che garantisce trasparenza su ogni mano.</li>
+        <li>Disponibile in demo gratuita e accessibile da mobile senza download.</li>
+        <li>Quattro livelli di difficoltà per cucirti il gioco addosso.</li>
+      </ul>
+      <p><b>Contro</b></p>
+      <ul>
+        <li>Rischio alto: basta una distrazione e la puntata va a zero.</li>
+        <li>Nessuna garanzia di vincita, l&#x27;esito è puramente casuale.</li>
+        <li>InOut Games non rende facilmente reperibili le informazioni societarie complete e i dettagli sulla licenza:
+          prima di giocare con soldi veri conviene controllare da soli che il titolo arrivi da un operatore regolarmente
+          autorizzato in Italia.</li>
+        <li>Facile farsi prendere dalla foga e sforare il proprio limite.</li>
+      </ul>
+      <h2>Domande frequenti (FAQ)</h2>
+      <details class='faq'>
+        <summary>Quanto posso puntare al minimo su Chicken Road?</summary>
+        <p>La puntata minima parte da 0,10 € nella versione base e da 0,01 € in Chicken Road 2.0. Sul conto, il deposito
+          minimo è di 10 €.</p>
+      </details>
+      <details class='faq'>
+        <summary>Come si incassa la vincita durante il round?</summary>
+        <p>Premi il pulsante di cashout (o la barra spaziatrice) quando vuoi, purché prima dell&#x27;incidente. In
+          alternativa imposti l&#x27;auto-cashout a una soglia fissata.</p>
+      </details>
+      <details class='faq'>
+        <summary>Il gioco è davvero equo?</summary>
+        <p>Ogni round gira sul Provably Fair: a fine partita ti arriva un hash con cui verifichi che il risultato non
+          sia stato truccato.</p>
+      </details>
+      <details class='faq'>
+        <summary>Posso provarlo gratis?</summary>
+        <p>Sì. La demo usa un saldo virtuale ed è ottima per fare pratica prima di passare ai soldi veri.</p>
+      </details>
+      <details class='faq'>
+        <summary>Come prelevo le vincite?</summary>
+        <p>Dalla sezione &quot;Preleva&quot; scegli il metodo (e-wallet, carta o bonifico), inserisci l&#x27;importo e
+          confermi la richiesta. Prima del primo prelievo devi completare la verifica dell&#x27;identità (KYC). I tempi
+          dipendono dal metodo: gli e-wallet di solito sono i più rapidi (poche ore, al massimo entro le 24), mentre
+          carta e bonifico possono prendersi qualche giorno lavorativo. Controlla sempre limiti minimi e massimi di
+          prelievo e le condizioni aggiornate nella sezione Cassa, perché cambiano in base al metodo e allo status del
+          conto.</p>
+      </details>
+    </article>
+    <div class="clusterFoot"><a href="/">Home</a><a href="/bonus/">Bonus</a><a href="/slot/">Slot</a><a
+        href="/recensioni/">Recensioni</a><a href="/accesso/">Accesso</a><a href="/app/">App</a><a
+        href="/prelievi/">Prelievi</a><a href="/plinko/">Plinko</a><a href="/aviator/">Aviator</a><a
+        href="/chicken-road/">Chicken Road</a></div>
+  </main>
+  <footer class="footer">
+    <div class="wrap">
+      <div class="payRow">
+        <img src="assets/footer/pay/mastercard.svg" alt="Mastercard" onerror="this.style.display='none'">
+        <img src="assets/footer/pay/visa.svg" alt="Visa" onerror="this.style.display='none'">
+        <img src="assets/footer/pay/pay1.svg" alt="" onerror="this.style.display='none'">
+        <img src="assets/footer/pay/pay2.svg" alt="" onerror="this.style.display='none'">
+        <img src="assets/footer/pay/pay3.svg" alt="" onerror="this.style.display='none'">
+        <img src="assets/footer/pay/pay4.svg" alt="" onerror="this.style.display='none'">
+        <span class="crypto">BTC · ETH · USDT · LTC · TRX · DOGE</span>
+      </div>
+
+      <div class="fnav">
+        <div>
+          <h4>Winnita</h4>
+          <a href="/referral-link">Chi siamo</a><a href="/referral-link">Novità</a><a
+            href="/referral-link">Negozio</a><a href="/referral-link">App mobile</a>
+        </div>
+        <div>
+          <h4>Giochi</h4>
+          <a href="/referral-link">Casinò</a><a href="/referral-link">Slot</a><a href="/referral-link">Casinò Live</a><a
+            href="/referral-link">Scommesse</a>
+        </div>
+        <div>
+          <h4>Aiuto</h4>
+          <a href="/referral-link">FAQ</a><a href="/referral-link">Termini e condizioni</a><a
+            href="/referral-link">Bonus</a><a href="/referral-link">Recensioni</a>
+        </div>
+        <div>
+          <h4>Contatti</h4>
+          <a href="mailto:support@winnita.com">support@winnita.com</a>
+          <a href="tel:+393511095005">+39 351 109 5005</a>
+        </div>
+      </div>
+
+      <div class="providers">
+        <span class="prov">Pragmatic Play</span><span class="prov">Endorphina</span><span
+          class="prov">Novomatic</span><span class="prov">Evolution</span><span class="prov">Play&#39;n GO</span><span
+          class="prov">NetEnt</span><span class="prov">Spinomenal</span><span class="prov">BGaming</span><span
+          class="prov">Gamzix</span><span class="prov">Wazdan</span><span class="prov">Booming Games</span><span
+          class="prov">Red Tiger</span><span class="prov">Quickspin</span><span class="prov">Playtech</span><span
+          class="prov">Yggdrasil</span><span class="prov">Relax Gaming</span><span class="prov">1spin4win</span><span
+          class="prov">7Mojos</span><span class="prov">Belatra</span><span class="prov">InOut</span><span
+          class="prov">NetGame</span><span class="prov">Slotopia</span>
+      </div>
+
+      <div class="fbottom">
+        <span class="age">18+</span>
+        <span>Il gioco può causare dipendenza patologica. Gioca responsabilmente. Operatore internazionale (non
+          AAMS/ADM) — gioco riservato ai maggiori di 18 anni.</span>
+      </div>
+      <div class="copy">© 2026 WINNITA · Tutti i diritti riservati.</div>
+    </div>
+  </footer>
+</body>
+
+</html>
